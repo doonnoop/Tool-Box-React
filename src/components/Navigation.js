@@ -7,7 +7,7 @@ export default class Navigation extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">Doonnoop</NavbarBrand>
             <Nav navbar>
               <NavItem>
                 <NavLink href="/video">Video</NavLink>
@@ -17,6 +17,7 @@ export default class Navigation extends React.Component {
               </NavItem>
             </Nav>
         </Navbar>
+        <br />
       </div>
     );
   }
