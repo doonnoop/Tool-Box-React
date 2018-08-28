@@ -27,7 +27,7 @@ class VideoList extends React.Component {
                 <Media src={video.snippet.thumbnails.default.url} alt="youtube" />
               </Media>
               <Media body>
-                  {video.snippet.title}
+                {video.snippet.title}
               </Media>
             </Media>
           </ListGroupItem>
