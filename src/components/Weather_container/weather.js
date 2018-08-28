@@ -4,10 +4,6 @@ import SearchBar from './SearchBar';
 import WeatherList from './WeatherList';
 
 class Weather extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container">

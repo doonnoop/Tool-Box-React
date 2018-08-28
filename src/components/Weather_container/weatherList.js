@@ -3,7 +3,7 @@ import { Table } from 'reactstrap';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 import Chart from './Chart';
-import GoogleMap from './GoogleMap';
+// import GoogleMap from './GoogleMap';
 
 class WeatherList extends React.Component {
 
@@ -14,12 +14,13 @@ class WeatherList extends React.Component {
     const pressures = cityData.list && cityData.list.map(weather => weather.main.pressure);
     const humidity = cityData.list && cityData.list.map(weather => weather.main.humidity);
 
-    const { lat, lon } = cityData.city.coord;
 
     return (
       <tr key={JSON.stringify(cityData.city.coord)}>
         <td>
-          <GoogleMap />
+          {
+            cityData.city.name
+          }
         </td>
         <td>
           <Chart data={temps} color='blue' unit='F'/>
