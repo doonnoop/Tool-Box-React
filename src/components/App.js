@@ -3,9 +3,9 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Video from "./Video_container/Video";
-import Weather from "./Weather_container/Weather";
 import PageNotFound from "./PageNotFound";
 import Navigation from './Navigation';
+import Weather from "./Weather_container/Weather";
 
 
 

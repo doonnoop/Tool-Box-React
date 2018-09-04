@@ -3,7 +3,7 @@ export const FETCH_VIDEOS = 'FETCH_VIDEOS';
 export const FETCH_ONE_VIDEO = 'FETCH_ONE_VIDEO';
 export const SELECT_VIDEO = 'SELECT_VIDEO';
 
-const API_KEY = '*****Your API KEY*****';
+const API_KEY = 'AIzaSyDT6DtcMBU8NBMPJZgcOghurUICc2yQ6Zc';
 
 export function fetchVideos(keyword) {
   // const params = {
