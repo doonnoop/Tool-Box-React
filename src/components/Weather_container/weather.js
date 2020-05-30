@@ -1,7 +1,7 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import SearchBar from './SearchBar';
-import WeatherList from './WeatherList';
+import React from "react";
+import { connect } from "react-redux";
+import SearchBar from "./SearchBar";
+import WeatherList from "./WeatherList";
 
 class Weather extends React.Component {
   render() {
@@ -16,13 +16,13 @@ class Weather extends React.Component {
           <WeatherList />
         </div>
       </div>
-    )
+    );
   }
 }
 
 function mapStateToProps(data) {
   return {
-    data: data
+    data: data,
   };
 }
 
