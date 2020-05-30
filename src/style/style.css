@@ -1,37 +1,42 @@
 .search-bar {
-    margin: 20px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
 }
 
 .glyphicon {
-    top: 0 !important
+  top: 0 !important;
 }
 
 .video-item img {
-    max-width: 64px;
+  max-width: 64px;
 }
 
 .video-detail .details {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .list-group-item {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .list-group-item:hover {
-    background-color: #eee;
+  background-color: #eee;
 }
 
-td, th {
-    vertical-align: middle !important;
-    text-align: center !important;
+td,
+th {
+  vertical-align: middle !important;
+  text-align: center !important;
 }
 
 td:first-of-type {
-    height: 180px;
-    width: 200px;
+  height: 180px;
+  width: 200px;
 }
-
+.expensify {
+  float: right;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
+}

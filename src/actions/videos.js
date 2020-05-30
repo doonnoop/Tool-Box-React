@@ -1,9 +1,9 @@
-var ROOT_URL = 'https://www.googleapis.com/youtube/v3/search';
-export const FETCH_VIDEOS = 'FETCH_VIDEOS';
-export const FETCH_ONE_VIDEO = 'FETCH_ONE_VIDEO';
-export const SELECT_VIDEO = 'SELECT_VIDEO';
+var ROOT_URL = "https://www.googleapis.com/youtube/v3/search";
+export const FETCH_VIDEOS = "FETCH_VIDEOS";
+export const FETCH_ONE_VIDEO = "FETCH_ONE_VIDEO";
+export const SELECT_VIDEO = "SELECT_VIDEO";
 
-const API_KEY = 'AIzaSyDT6DtcMBU8NBMPJZgcOghurUICc2yQ6Zc';
+const API_KEY = "AIzaSyDzhjM7DvVHHGcDzINXwcjx9TQ82xIL2uQ";
 
 export function fetchVideos(keyword) {
   // const params = {
@@ -20,16 +20,16 @@ export function fetchVideos(keyword) {
   // }
 
   return (dispatch) => {
-    fetch(`${ ROOT_URL}?q=${keyword}&part=snippet&key=${API_KEY}`)
+    fetch(`${ROOT_URL}?q=${keyword}&part=snippet&key=${API_KEY}`)
       .then((resp) => resp.json())
-      .then(resp => {
+      .then((resp) => {
+        console.log(resp);
         dispatch({
           type: FETCH_VIDEOS,
-          videos: resp
-        })
-      })
+          videos: resp,
+        });
+      });
   };
-
 }
 
 export function fetchOneVideo(keyword) {
@@ -47,20 +47,20 @@ export function fetchOneVideo(keyword) {
   // }
 
   return (dispatch) => {
-    fetch(`${ ROOT_URL}?q=${keyword}&part=snippet&key=${API_KEY}`)
+    fetch(`${ROOT_URL}?q=${keyword}&part=snippet&key=${API_KEY}`)
       .then((resp) => resp.json())
-      .then(resp => {
+      .then((resp) => {
         dispatch({
           type: FETCH_ONE_VIDEO,
-          videos: resp
-        })
-      })
+          videos: resp,
+        });
+      });
   };
 }
 
 export function selectVideo(video) {
   return {
     type: SELECT_VIDEO,
-    video: video
-  }
+    video: video,
+  };
 }
